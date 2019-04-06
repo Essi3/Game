@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="words">
+        <item>BAT</item>
+        <item>BLOODCURDLING</item>
+        <item>BONES</item>
+        <item>BROOMSTICK</item>
+        <item>CANDY</item>
+        <item>CASKET</item>
+        <item>CAULDRON</item>
+        <item>CEMETERY</item>
+        <item>COBWEB</item>
+        <item>COSTUME</item>
+        <item>FANGS</item>
+        <item>GHOST</item>
+        <item>GOBLIN</item>
+        <item>GRAVE</item>
+        <item>HAUNTED</item>
+        <item>MUMMY</item>
+        <item>PUMPKIN</item>
+        <item>SCREAM</item>
+        <item>SKELETON</item>
+        <item>SKULL</item>
+        <item>SPIDER</item>
+        <item>TOMBSTONE</item>
+        <item>VAMPIRE</item>
+        <item>WARLOCK</item>
+        <item>WEREWOLF</item>
+        <item>WITCH</item>
+        <item>ZOMBIE</item>
+    </string-array>
+
+</resources>

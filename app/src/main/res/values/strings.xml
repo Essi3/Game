@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Game</string>
+    <string name="main_menu">main menu</string>
+    <string name="the_hangman_game">the hangman game</string>
+    <string name="play_game">play game</string>
+    <string name="play">play</string>
+    <string name="images_of_hangman">Images of Hangman</string>
+    <string name="enter_a_letter">Enter a Letter</string>
+    <string name="guess">guess</string>
+    <string name="info">info</string>
+    <string name="used_characters">Used Characters:</string>
+    <string name="lives_left">Lives left:</string>
+    <string name="this_game_has_been_designed_and_programmed_by_elisabeth_roozen_2018">This game has been designed and programmed by Elisabeth Roozen © 2018</string>
+    <string name="guess_the_letters_of_the_mystery_word_before_your_time_is_up">Guess the letters of the mystery word before your time is up!</string>
+    <string name="home">home</string>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic3"
+    tools:context=".GameActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/game_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:text="@string/the_hangman_game"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/ic_android_24dp"
+        app:titleTextColor="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/hangmanImageView"
+        android:layout_width="126dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/images_of_hangman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_toolbar" />
+
+    <TextView
+        android:id="@+id/wordTextView"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="W _ _ D"
+        android:textAlignment="center"
+        android:textColor="@color/textColor2"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guessLetterEditText"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hangmanImageView" />
+
+    <EditText
+        android:id="@+id/guessLetterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzåäö ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
+        android:hint="@string/enter_a_letter"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guess_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordTextView" />
+
+    <Button
+        android:id="@+id/guess_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="150dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:text="@string/guess"
+        android:textColor="@color/colorAccent"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessLetterEditText" />
+
+    <TextView
+        android:id="@+id/livesLeftTV"
+        android:layout_width="170dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/lives_left"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textColor3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/leftLivesTextView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/hangmanImageView"
+        app:layout_constraintTop_toBottomOf="@+id/game_toolbar" />
+
+    <TextView
+        android:id="@+id/usedCharactersTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/used_characters"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textColor3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toEndOf="@+id/hangmanImageView"
+        app:layout_constraintTop_toBottomOf="@+id/livesLeftTV"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/leftLivesTextView"
+        android:layout_width="31dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@color/textColor3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_toolbar" />
+
+    <TextView
+        android:id="@+id/usedCharactersTextView"
+        android:layout_width="196dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="A, B, C, D, E, F, G, H, I, J"
+        android:textColor="@color/textColor3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hangmanImageView"
+        app:layout_constraintTop_toBottomOf="@+id/usedCharactersTV" />
+
+</android.support.constraint.ConstraintLayout>
